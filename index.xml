@@ -2,13 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>7awadeth Podcast</title>
-    <link>http://localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on 7awadeth Podcast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Wed, 03 Aug 2022 22:28:59 +0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TheShadowBrokers</title>
+      <link>/posts/theshadowbrokers/</link>
+      <pubDate>Wed, 03 Aug 2022 22:28:59 +0300</pubDate>
+      
+      <guid>/posts/theshadowbrokers/</guid>
+      <description>E1 TheShadowBrokers وسطاء الظل تمهيد Brief الحرب الباردة بين الدول الكبرى مستمرة. لكنها في عصر الديجتال بدات تاخذ منحا اخر وذلك من خلال الحروب السيبرانية&amp;hellip;.تتميز الحروب السيبرانية بسهولة تنفيذها والتضليل فيها ومرونتها عل الصعيد اللوجستي حيث يمكن نقل الاسلحة السيبرانية وتنفيذها خلال لحظات ونقلها بين القارات خلال لمح البصر. الضرر الناجم عنها قد يؤدي لخساءر بمليارات الدولارات و يهدد ارواح العديد من البشر. انها السمة المميزة لحروب هذا العصر&amp;hellip; عصر الديجيتال وحروبه السيبرانية</description>
+    </item>
     
-        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+https://github.com/yuin/goldmark https://github.</description>
+    </item>
     
+    <item>
+      <title>About</title>
+      <link>/about.pt-br/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/about.pt-br/</guid>
+      <description>Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença Apache Licence 2.0. O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.
+O Hugo faz o uso de vários projetos de código aberto incluíndo:</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>Follow me, @johndoe.</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>Me siga em @joaoninguem.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Nothing to see here&amp;hellip; Move along!</description>
+    </item>
+    
+    <item>
+      <title>Projetos</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Nada para ver aqui.. Circulando!</description>
+    </item>
     
   </channel>
 </rss>

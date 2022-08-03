@@ -1,22 +1,36 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>/</loc>
+    <lastmod>2022-08-03T22:28:59+03:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2022-08-03T22:28:59+03:00</lastmod>
+  </url><url>
+    <loc>/posts/theshadowbrokers/</loc>
+    <lastmod>2022-08-03T22:28:59+03:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/about.pt-br/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/</loc>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/contact/</loc>
+  </url><url>
+    <loc>/contact/</loc>
+  </url><url>
+    <loc>/projects/</loc>
+  </url><url>
+    <loc>/projects/</loc>
+  </url><url>
+    <loc>/series/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
 </urlset>
