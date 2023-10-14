@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on 7awadeth Podcast</title>
+    <link>/news/</link>
+    <description>Recent content in News on 7awadeth Podcast</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Oct 2023 13:14:20 +0300</lastBuildDate><atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تطورات الحرب السيبرانية مع دولة الاحتلال الاسرائيلي, تسريب بيانات جينية, ثغرات على مستوى i o s و اندرويد وبرامج تطوير نماذج الذكاء الاصطناعي و استغلال واسع النطاق لثغرة Citrix NetScaler... </title>
+      <link>/news/151023/</link>
+      <pubDate>Sat, 14 Oct 2023 13:14:20 +0300</pubDate>
+      
+      <guid>/news/151023/</guid>
+      <description>الحرب السيبرانية الدائرة مع دولة الاحتلال اسرائيل بدأ الاقتتال الحالي بين الفلسطينيين مع دولة الاحتلال ياخذ بعدا سيبرانيا منذ ايام الاقتتال الاولى, حيث نشر نشطاء مخترقون hacktivist مقالة تقول إنهم يستهدفون أهدافًا إسرائيلية على الإنترنت خلال الحرب بين إسرائيل وغزة، حيث يقومون بتعطيل والسيطرة على مواقع الويب مثل تعطل موقع جيروساليم بوست .بهذه الاختراقات السيبرانية يتم جذب اهتمام عالمي شديد للصراع، وتستخدم مجموعات الهاكتيفيست هذا الصراع لدعم الجانب الذي يفضلونه.</description>
+    </item>
+    
+  </channel>
+</rss>
