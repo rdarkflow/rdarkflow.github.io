@@ -5,6 +5,7 @@
     <link>/series/</link>
     <description>Recent content in Series on 7awadeth Podcast</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
