@@ -6,8 +6,24 @@
     <description>Recent content on 7awadeth Podcast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Nov 2023 22:09:01 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 18 Nov 2023 18:05:28 +0300</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Palestine - Israel update, Boeing Data Leak, Poloniex Hack, SBOM Guid,Toyota Hack, VMware Juniper critical vulnerabilities, Randstorm, Clorox CISO</title>
+      <link>/news/181123/</link>
+      <pubDate>Sat, 18 Nov 2023 18:05:28 +0300</pubDate>
+      <guid>/news/181123/</guid>
+      <description>اخبار الحرب السيبرانية بين حماس ودولة الاحتلال استخدام &amp;ldquo;Protestware&amp;rdquo; على منصة npm للتعبير عن الصراعات في أوكرانيا وغزة
+اكتشف الباحثون في ReversingLabs حزم برمجيات مفتوحة المصدر على منصة npm تحتوي على سكريبتات تبث رسائل سلام تتعلق بالصراعات الجارية في غزة. هذه الحزم هي أحدث أمثلة على ما يُعرف بـ &amp;ldquo;Protestware&amp;rdquo;، وهي مسألة متكررة في نظام البرمجيات مفتوحة المصدر حيث يخفي المطورون رسائل سياسية داخل الكود المصدري، وغالبًا ما يتم تصميمها لتظهر للمستخدم بعد تثبيت التطبيق أو عند تنفيذه.</description>
+    </item>
+    <item>
+      <title>Israel - Hamas cyberwar, DDOS ChatGPT, ICDC Bank Attack, Google Calendar C2, Confluence &amp; Apache ActiveMQ Ransomware, AI Bug Bounty</title>
+      <link>/news/121123/</link>
+      <pubDate>Sun, 12 Nov 2023 18:03:41 +0300</pubDate>
+      <guid>/news/121123/</guid>
+      <description>اخر تطورات الحرب السيبرانية مع دولة الاحتلال الصهيوني مايكروسوفت تسلط الضوء على الأنشطة السيبرانية الإيرانية خلال الصراع بين إسرائيل وحماس في CYBERWARCON 2023 في مؤتمر CYBERWARCON 2023، قامت شركة مايكروسوفت بتقديم تحليل معمق حول الأنشطة السيبرانية للمجموعات الإيرانية خلال النزاع الأخير بين إسرائيل وحماس. تم التركيز بشكل خاص على الدور الذي لعبته المجموعات المرتبطة بوزارة الاستخبارات والأمن الإيرانية (MOIS) والحرس الثوري الإسلامي (IRGC).
+وفقًا للتحليل الذي قدمته مايكروسوفت، بدأت العمليات السيبرانية الإيرانية بعد 11 يومًا من اندلاع النزاع البري، حيث شهدت هذه الفترة تنفيذ هجمتين منفصلتين ذات طابع تدميري استهدفتا البنية التحتية الإسرائيلية.</description>
+    </item>
     <item>
       <title> اخر تطورات الحرب السيبرانية مع دولة الاحتلال الصهيوني - NGINX - الولايات المتحدة تصدر قرار تنفيذي بخصوص AI Security - تحذير من ثغرة حرجة على Confluence - ثغرة حرجة F5 - CISO SolarWinds</title>
       <link>/news/051123/</link>
