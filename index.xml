@@ -6,8 +6,15 @@
     <description>Recent content on 7awadeth Podcast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Nov 2023 22:43:28 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 03 Dec 2023 18:44:33 +0300</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber War Gaza, Okta Hack update, GulfAir Hack, Chrome ZeroDay, Telegram phishing, AI Security Roadmap, First American Corp Data Leak</title>
+      <link>/news/031223/</link>
+      <pubDate>Sun, 03 Dec 2023 18:44:33 +0300</pubDate>
+      <guid>/news/031223/</guid>
+      <description>اخر تطورات ما يخص الحرب السيبرانية مع دولة الاحتلال مجموعة اختراق متطورة جدا تُعرف باسم &amp;ldquo;WildCard&amp;rdquo; فريق البحث في شركة Intezer قام بالكشف عن مجموعة جديدة للاختراق المعروفة باسم &amp;ldquo;WildCard&amp;rdquo;، تم اكتشافها أولاً من خلال استخدامها لبرمجية SysJoker، التي استهدفت قطاع التعليم في إسرائيل في عام 2021. منذ ذلك الحين، قامت WildCard بتوسيع نطاق نشاطها، حيث قامت بإنشاء نسخ متقنة من البرمجيات تتنكر بشكل جيد كبرمجيات شرعية، بالإضافة إلى تطوير برمجية هجومية جديدة تحمل اسم &amp;ldquo;RustDown&amp;rdquo;، تمت كتابتها بلغة Rust للحصول على مزايا تشغيلية محتملة.</description>
+    </item>
     <item>
       <title>Cyber Tofan - CISA IOC new Standard - BlackCat files compliant - Cyber Security Firm attack hospitals - MS Threat Intel Podcast - BlueHat 2023 - Windows Hello Bypass</title>
       <link>/news/261123/</link>
