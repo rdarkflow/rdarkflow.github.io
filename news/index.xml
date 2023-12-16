@@ -6,8 +6,15 @@
     <description>Recent content in News on 7awadeth Podcast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Dec 2023 05:56:04 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 16 Dec 2023 23:53:26 +0300</lastBuildDate>
     <atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latest News 17-12-2023: Fancy Bear Phishing, Iran Russia cyber agreement, NSA SBOM Guide, Trust in AI, Ukrain Mobile Attack, JetBrains Struts2 &amp; 5G Vulns </title>
+      <link>/news/171223/</link>
+      <pubDate>Sat, 16 Dec 2023 23:53:26 +0300</pubDate>
+      <guid>/news/171223/</guid>
+      <description>استغلال الصراع الإسرائيلي-الفلسطيني في توزيع برمجية &amp;ldquo;HeadLace&amp;rdquo; الخبيثة* تستغل مجموعة Fancy Bear الروسية عملياتها الأمنية السيبرانية باستخدام طعم يتعلق بالصراع بين إسرائيل وحماس لنشر برمجية &amp;ldquo;HeadLace&amp;rdquo; الخبيثة. يتم ذلك عبر إرسال رسائل بريد إلكتروني تحتوي على مرفقات أو روابط تبدو مشروعة ولكنها تحمل البرمجية الخبيثة. هذه الهجمات تهدف إلى استغلال الاهتمام العالمي بالصراع لخداع الضحايا ودفعهم لفتح المرفقات الضارة.&#xA;مقالة Security Intelligence.&#xA;معاهدة التعاون السيبراني بين إيران وروسيا أقر البرلمان الإيراني مشروع قانون يهدف إلى تعزيز التعاون مع روسيا في مجال أمان المعلومات، حيث اتهمت البلدين بشكل متزايد بتنفيذ هجمات سيبرانية واسعة النطاق.</description>
+    </item>
     <item>
       <title>Israel Info War, Confluence Critical Vuln,  Exposed Hugging Face API tokens, indirect prompt injection LLM, Nissan Attack, Microsoft New CISO</title>
       <link>/news/101223/</link>
