@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2023-12-16T23:53:26+03:00</lastmod>
+    <lastmod>2023-12-23T16:10:13+03:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-12-23T16:10:13+03:00</lastmod>
+  </url><url>
+    <loc>/posts/log4shell/</loc>
+    <lastmod>2023-12-23T16:10:13+03:00</lastmod>
   </url><url>
     <loc>/news/171223/</loc>
     <lastmod>2023-12-16T23:53:26+03:00</lastmod>
@@ -37,9 +43,6 @@
   </url><url>
     <loc>/news/151023/</loc>
     <lastmod>2023-10-14T13:14:20+03:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-10-01T22:28:59+03:00</lastmod>
   </url><url>
     <loc>/posts/casino/</loc>
     <lastmod>2023-10-01T22:28:59+03:00</lastmod>

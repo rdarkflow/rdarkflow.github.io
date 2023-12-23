@@ -6,8 +6,15 @@
     <description>Recent content on 7awadeth Podcast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Dec 2023 23:53:26 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 23 Dec 2023 16:10:13 +0300</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>الحادثة#5:الجائحة السيبرانية لوغ4شيل LOG4SHELL Cyber Pandemic</title>
+      <link>/posts/log4shell/</link>
+      <pubDate>Sat, 23 Dec 2023 16:10:13 +0300</pubDate>
+      <guid>/posts/log4shell/</guid>
+      <description>الجائحة السيبرانية Log4Shell لوغ4شيل log4shell او ثغرة log4j ,,,, ثغرة هزت عالم الأمن السيبراني. واحدة من اخطر الثغرات في التاريخ والتي اكتشفت قبل عامين ومازال يتم استغلالها الى الان، وهي ثغرات أمنية خطيرة في مكتبة البرمجة &amp;ldquo;لوغ4جي&amp;rdquo; software library المنتشرة بشكل كبير وعنصر اساسي في برمجيات الجافا. تم الكشف عن اسلوب ,وتقنية اختراق هذه الثغرة لأول مرة في مؤتمر &amp;ldquo;بلاك هات&amp;rdquo; عام 2015، لكن تلك المحاضرة لم تحظ بشهرة واسعة وقتها, حيث لم تكتشف ثغرة log4shell الا في عام 2021, عندما قرر احدهم اختراق لعبة &amp;ldquo;ماينكرافت&amp;rdquo; الشهيرة, والمكتوبة بلغة جافا, اي بعد ست سنوات من تبيان اسلوب الاختراق&amp;hellip; ثلاثة بلايين جهاز وسيرفر تعمل بالجافا حول العالم, شكلت هذه الثغرة فشلاً متعدد المستويات في الأمن السيبراني.</description>
+    </item>
     <item>
       <title>Latest News 17-12-2023: Fancy Bear Phishing, Iran Russia cyber agreement, NSA SBOM Guide, Trust in AI, Ukrain Mobile Attack, JetBrains Struts2 &amp; 5G Vulns </title>
       <link>/news/171223/</link>

